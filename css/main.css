@@ -108,7 +108,6 @@ padding-bottom: 20px ;
 .p-box {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
     padding-bottom: 30px;
-    height: 500px;
     width: 285px;
     margin-bottom: 20px;
 }
@@ -273,6 +272,8 @@ line-height: 28px;
     gap: 115px;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .logo-img{
@@ -345,6 +346,175 @@ line-height: 28px;
     margin-bottom: 8px;
     border-radius: 20px;
 }
+
+/* nav listdagi ozgarish */
+.act{
+    color: rgb(248, 54, 54);
+}
+
+
+
+/* katalog css start*/
+.katalog-header{
+    background-color: black;
+}
+.katalog-contaoner{
+    max-width: 1840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.katalog-body{
+    background-color: rgba(248, 248, 255, 1);
+}
+.katalog-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.katalog-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1260px;
+    background-color: white;
+    padding: 84px 106px;
+    margin-top: 64px;
+}
+.katalog-box{
+    width: 335px;
+}
+.katalog-box-img{
+    width: 335px;
+}
+.katalog-box-btn{
+        margin-left: 62px;
+}
+.katalog-top-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.left-title {
+font-family: font family/"Font 1", sans-serif;
+font-weight: font weight/500;
+font-style: Medium;
+font-size: 14.7px;
+line-height: line height/28_8;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(119, 119, 119, 1);
+padding-bottom: 14.7px;
+}
+/*katalog css end*/
+
+
+/*opt css start*/
+.opt-popular{
+   background-color: white;
+   margin-top: 60px;
+   padding-top: 120px;
+}
+.opt-body{
+   background-color: rgba(248, 248, 255, 1);
+}
+/*opt css end*/
+
+/* kontakt css start */
+.contact {
+ padding: 136px 217px;
+}
+.con-left-title {
+font-family: "Geist";
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: rgba(0, 0, 0, 1);
+padding-bottom: 25px;
+}
+.con-left-text {
+font-family: "Geist";
+font-weight: 400;
+font-style: "Regular";
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+color: rgba(119, 114, 110, 1);
+padding-bottom: 67px;
+}
+
+
+
+.contact-container {
+    display: flex;
+    gap: 400px;
+}
+
+
+.con-input {
+    display: block;
+    margin-bottom: 105px;
+    width: 400px;
+    border: none;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(2, 7, 79, 1);
+    font-size: 18px;
+}
+.con-btn {
+    background-color:rgba(2, 7, 79, 1) ;
+    border-radius: 48px;
+    width: 372px;
+    padding: 24px 121px;
+
+  
+}
+.con-btn-link{
+    text-decoration: none;
+      font-size: 24px;
+    color: white;
+    font-family: Geist;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 120%;
+letter-spacing: 0%;
+
+}
+.con-right-top {
+    margin-bottom: 108px;
+}
+.con-right-top-text {
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+
+}
+.con-right-top-tell {
+    font-weight: 300;
+    border-bottom: 1px solid ;
+    padding-bottom: 1px;
+    width: 290px;
+
+}
+.con-right-bottom-adress {
+    font-family: "Geist";
+font-weight: 400;
+font-style: "Regular";
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-bottom: 97px;
+}
+.con-right-links{
+    display: flex;
+    gap: 64px;
+}
+/* kontakt css end */
+
+
+
 
 /* header media start*/
 @media (max-width:1250px) {
@@ -615,6 +785,7 @@ justify-content: center;
 }
 /* o-nas media end*/
 
+
 /* footer media start*/
 @media (max-width: 795px) {
     .footer{
@@ -633,4 +804,186 @@ justify-content: center;
         justify-content: center;
     }
     
+}
+/* footer media end*/
+
+
+/* katalog media start*/
+@media (max-width:1243px) {
+    .katalog-box{
+    width: 300px;
+}
+.katalog-box-img{
+    width: 300px;
+}
+.katalog-box-btn{
+        margin-left: 50px;
+}
+}
+@media (max-width:1153px) {
+    .katalog-box{
+    width: 280px;
+}
+.katalog-box-img{
+    width: 280px;
+}
+.katalog-box-btn{
+        margin-left: 38px;
+}
+}
+@media (max-width:1075px) {
+    .katalog-box{
+    width: 250px;
+}
+.katalog-box-img{
+    width: 250px;
+}
+.katalog-box-btn{
+        margin-left: 20px;
+}
+}
+@media (max-width: 984px) {
+    .katalog-boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        .katalog-box{
+    width: 300px;
+}
+.katalog-box-img{
+    width: 300px;
+}
+.katalog-box-btn{
+        margin-left: 50px;
+}
+}
+@media (max-width: 880px) {
+.katalog-boxes{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .katalog-box{
+    width: 300px;
+}
+.katalog-box-img{
+    width: 300px;
+}
+.katalog-box-btn{
+        margin-left: 50px;
+}
+    .katalog-container {
+        padding: 84px 0;
+    }
+
+}
+@media (max-width: 400px) {
+    .katalog-top-titles {
+    flex-direction: column;
+    display: block;
+    }
+}
+/* katalog media end*/
+
+
+/* kontakt media start*/
+@media (max-width: 1300px) {
+    .contact-container {
+       gap: 300px;
+    }
+}
+@media (max-width: 1222px) {
+    .contact-container {
+       gap: 200px;
+    }
+}
+@media (max-width: 1121px) {
+    .contact-container {
+       gap: 150px;
+    }
+}
+@media (max-width: 1070px) {
+    .contact-container {
+       gap: 100px;
+    }   
+}
+@media (max-width: 1023px) {
+    .con-input {
+    width: 350px;
+}
+.con-right-top-tell{
+    font-size: 23px;
+     width: 210px;
+}
+.con-right-links{
+    display: flex;
+    gap: 34px;
+}
+}
+@media (max-width: 915px) {
+    .con-input {
+    width: 330px;
+}
+.con-right-top-tell{
+    font-size: 20px;
+    width: 180px;
+}
+.con-right-links{
+    display: flex;
+    gap: 26px;
+}
+}
+@media (max-width: 900px) {
+    .contact-container {
+       flex-direction: column;
+      
+    }
+    .contact{
+         max-width: 760px;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+    }
+    .con-right-top-tell {
+        margin-left: 73px;
+    }
+    .con-right-links{
+        display: flex;
+        justify-content: center;
+    }
+     .con-input {
+    width: 370px;
+}
+.con-btn{
+    width: 190px;
+    padding: 18px 30px;
+    margin-left: 70px;
+}
+}
+@media (max-width: 910px) {
+    .con-btn{
+    width: 190px;
+    padding: 18px 30px;
+    margin-left: 50px;
+}
+.con-right-top-tell {
+        margin-left: 73px;
+    }
+}
+@media (max-width: 755px) {
+    .con-right-top-tell {
+        margin-left: 53px;
+    }
+}
+@media (max-width: 657px) {
+.con-btn{
+    width: 190px;
+    padding: 18px 30px;
+    margin-left: 0px;
+}
+.con-right-top-tell {
+        margin-left: 0px;
+    }
+}
+.con-input{
+    width: 310px;
 }
