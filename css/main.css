@@ -539,11 +539,19 @@ margin-bottom: 97px;
     .nav-list{
         position: absolute;
         width: 100%;
-        background-color: #02023a;
-        top: 700px;
+        background-color: #ffffff;
+        top: 110px;
         right: 0;
         display: none;
+        padding-top: 14px;
     }
+    .nav-link{ 
+        color: #000000;
+
+    }
+    .act{
+    color: rgb(248, 54, 54);
+}
     .menu{
         display: block;
         cursor: pointer;
