@@ -29,6 +29,7 @@
             </nav>
         </div>
     </div>
+
     <section class="popular main opt-popular">
         <div class="top-title">
             <h4 class="top-title1">Популярное</h4>
@@ -37,40 +38,56 @@
             <p class="head-title-btn btn"><a href="#opt" class="head-title-btn-link btn-l">Опт</a></p>
             </div>
         </div>
+
         <div class="p-boxes">
              <div class="p-box">
                 <img src="/img/popular/1.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Dolci & Gabbina</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                <button class="p-box-btn" onclick="openModel('Dolci & Gabbina', '/img/popular/1.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="/img/popular/2.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Vercase</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Vercase', '/img/popular/2.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="/img/popular/3.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Coco Shanel</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Coco Shanel', '/img/popular/3.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="/img/popular/4.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Vicotria’s Secret</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Vicotria’s Secret', '/img/popular/4.png')">ПОДРОБНЕЕ</button>
             </div>
               <div class="p-box cuci">
                 <img src="/img/popular/5.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Cucci Fiora</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                    <button class="p-box-btn" onclick="openModel('Cucci Fiora', '/img/popular/5.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="/img/popular/6.png" alt="error" class="p-box-img">
                 <p class="p-box-title">j’adori</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                    <button class="p-box-btn" onclick="openModel('j’adori', '/img/popular/6.png')">ПОДРОБНЕЕ</button>
             </div>
         </div>
         
+        <div class="model" id="myModel">
+        <div class="model-container">
+            <span class="x" onclick="closeModel()">&times;</span>
+            <img src="" id="modelImg" class="model-img" alt="">
+            <h3 id="modelTitle" class="p-box-title, modelTit"></h3>
+            <form action="#">
+                <label for="phone" class="label">Telefon raqami</label>
+                <input type="tel" class="input" id="phone" placeholder="+999(__)___'____'___">
+                <button class="model-btn p-box-btn" onclick="sentData()">Jo'natish</button>
+            </form>        
+        </div>
+    </div>
+
+        
     </section>
+
     <section class="o-nas main">
        <div class="o-nas-container mw">
          <div class="o-nas-left" >
@@ -179,7 +196,7 @@
     <div class="footer-inputs">
             <p class="imput-text footer-link">Сотрудничества</p>
             <div class="footer-input">
-                <input type="tel" class="input" placeholder="+998">
+                <input type="tel" class="finput" placeholder="+998">
                 <button class="input-btn footer-link">Отправить</button>
             </div>
         </div>

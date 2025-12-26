@@ -130,12 +130,15 @@ padding-bottom: 20px ;
     border-radius: 20px;
     padding: 10px 105px;
     margin-left: 38px;
-}
-.p-box-btn-l{
+    border: none;
     text-decoration: none;
     color: white;
      
 }
+
+
+
+
 /* o-nas sec. start*/
 .o-nas {
     background-color: rgba(248, 248, 255, 1);
@@ -224,9 +227,12 @@ line-height: 28px;
    padding-top: 297px;
 }
 .div1{
-    display: flex;
-    justify-content: center;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 400px;
+    text-align: center;
+
 }
 .o-brend-text{
     text-align: center;
@@ -239,7 +245,8 @@ line-height: 28px;
     padding-bottom: 30px;
 }
 .o-brend-btn{
-    width: 130px;
+    width: 150px;
+    padding: 10px;
 }
 .o-brend-div2{
     background-color: black;
@@ -309,7 +316,7 @@ line-height: 28px;
     gap: 10px;
     flex-wrap: wrap;
 }
-.input {
+.finput {
     padding: 10px;
     background-color: rgba(2, 7, 79, 1);
     border: 1px solid rgb(66, 65, 65);
@@ -491,9 +498,11 @@ font-size: 32px;
 
 }
 .con-right-top-tell {
-    font-weight: 300;
+    font-weight: 100;
     border-bottom: 1px solid ;
     padding-bottom: 1px;
+    font-size: 350x;
+    font-family: sans-serif;
 }
 .con-right-bottom-adress {
     font-family: "Geist";
@@ -782,10 +791,13 @@ justify-content: center;
    overflow: hidden;
 }
     .o-brend-btn{
-        width: 170px;
+        width: 156px;
+      
     }
     .div1{
         padding-bottom: 166px;
+       
+    
     }
 }
 /* o-nas media end*/
@@ -904,11 +916,15 @@ justify-content: center;
        gap: 300px;
     }
 }
+
+
+
 @media (max-width: 1280px) {
-    .con-right-top-tell{
-        font-size: 30px;
-    }
+
 }
+
+
+
 @media (max-width: 1222px) {
     .contact-container {
        gap: 200px;
@@ -1015,3 +1031,98 @@ justify-content: center;
 }
 }
 /* kontakt media end*/
+
+/*model css start*/
+.model {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.model-container {
+    background-color: white;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    height: 550px;
+    margin-top: 100px;
+}
+.x {
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+.modelTit{
+   padding-bottom: 0;
+}
+.model-img {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+.label {
+    display: block;
+    
+}
+.input {
+    width: 170px;
+    margin-left: 45px;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: white;
+    outline: 1px solid rgba(251, 75, 122, 1);
+    border: 1px solid rgba(251, 75, 122, 1);
+    color: rgba(251, 75, 122, 1);
+}
+.model-btn {
+    margin-left: 25px;
+    
+}
+/*model css start*/
+
+
+/*video css start*/
+.video {
+     display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.video-container {
+    width: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    height: 600px;
+}
+.v-exit {
+    cursor: pointer;
+    position: absolute;
+    right: 115px;
+    top: -10px;
+    background-color: rgb(0, 0, 0);
+    padding: 4px 8px;
+    color: white;
+    border-radius: 100%;
+}
+.video-img {
+    height: 600px;
+}
+/* video css end*/

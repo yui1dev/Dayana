@@ -13,3 +13,34 @@ links.forEach(link =>{
         navList.classList.remove("aktive")
     })
 })
+
+function openModel(title, imgSrc){
+    document.getElementById("modelTitle").innerText = title;
+    document.getElementById("modelImg").src = imgSrc;
+    document.getElementById("myModel").style.display = "flex";
+
+}
+ 
+function closeModel(){
+    document.getElementById("myModel").style.display = "none";
+
+}
+function sentData(){
+    let phone = document.getElementById("phone").value;
+
+     if(phone == ""){
+        alert("Telefon raqam kiriting");
+     } else{
+       alert("Telefon raqamingiz qabul qilindi: " + phone)
+
+       closeModel()
+     }
+}
+
+function openVideo(){
+    document.getElementById("myVideo").style.display = "flex";
+}
+
+function closeVideo(){
+    document.getElementById("myVideo").style.display = "none";
+}

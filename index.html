@@ -46,40 +46,56 @@
             <p class="head-title-btn btn"><a href="#opt" class="head-title-btn-link btn-l">Опт</a></p>
             </div>
         </div>
+
+
         <div class="p-boxes">
              <div class="p-box">
                 <img src="img/popular/1.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Dolci & Gabbina</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                <button class="p-box-btn" onclick="openModel('Dolci & Gabbina', 'img/popular/1.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="img/popular/2.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Vercase</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Vercase', 'img/popular/2.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="img/popular/3.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Coco Shanel</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Coco Shanel', 'img/popular/3.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="img/popular/4.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Vicotria’s Secret</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                   <button class="p-box-btn" onclick="openModel('Vicotria’s Secret', 'img/popular/4.png')">ПОДРОБНЕЕ</button>
             </div>
               <div class="p-box cuci">
                 <img src="img/popular/5.png" alt="error" class="p-box-img">
                 <p class="p-box-title">Cucci Fiora</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                    <button class="p-box-btn" onclick="openModel('Cucci Fiora', 'img/popular/5.png')">ПОДРОБНЕЕ</button>
             </div>
             <div class="p-box">
                 <img src="img/popular/6.png" alt="error" class="p-box-img">
                 <p class="p-box-title">j’adori</p>
-                <p class="p-box-btn"><a href="#popular" class="p-box-btn-l">ПОДРОБНЕЕ</a></p>
+                    <button class="p-box-btn" onclick="openModel('j’adori', 'img/popular/6.png')">ПОДРОБНЕЕ</button>
             </div>
         </div>
         
+        <div class="model" id="myModel">
+        <div class="model-container">
+            <span class="x" onclick="closeModel()">&times;</span>
+            <img src="" id="modelImg" class="model-img" alt="">
+            <h3 id="modelTitle" class="p-box-title, modelTit"></h3>
+            <form action="#">
+                <label for="phone" class="label">Telefon raqami</label>
+                <input type="tel" class="input" id="phone" placeholder="+999(__)___'____'___">
+                <button class="model-btn p-box-btn" onclick="sentData()">Jo'natish</button>
+            </form>        
+        </div>
+    </div>
+
     </section>
+
     <section class="o-nas main">
        <div class="o-nas-container mw">
          <div class="o-nas-left" >
@@ -98,9 +114,20 @@
             <p class="head-title-btn btn o-nas-btn" hidden><a href="#" class="head-title-btn-link btn-l">О НАС</a></p>
 
         </div>
+
         <div class="o-nas-right">
-            <button class="o-nas-vdbtn"><img src="img/o-nas/Container (1).png" alt="" class="o-nas-img"></button>
+            <img src="/img/video.mp4" alt="">
+            <button class="o-nas-vdbtn" onclick="openVideo('/img/video.mp4')"><img src="img/o-nas/Container (1).png" alt="" class="o-nas-img"></button>
         </div>
+        
+        <div class="video" id="myVideo">
+            <div class="video-container">
+                <span class="v-exit" onclick="closeVideo()">&times;</span>
+                <video src="/img/video.mp4" controls autoplay muted class="video-img"></video>
+            </div>
+        </div>
+
+
        </div>
        <div class="o-nas-bottom mw" >
           <div class="o-div"  >
@@ -159,17 +186,19 @@
             </div>
        </div>
     </section>
+
     <section class="o-brend main">
-      <div class="div1"
-        <div class="o-brend-text">
+    <div class="div1">
+    <div class="o-brend-text">
         <h1 class="o-brend-title">О бренде</h1>
-        <p class="head-title-btn o-brend-btn"><a href="#" class="head-title-btn-link">Смотреть видео <img src="img/o-brend/Vector (1).svg" alt=""></a></p>
-      </div>
+        <p class="head-title-btn o-brend-btn" onclick="openVideo('/img/video.mp4')"><a href="#" class="head-title-btn-link">Смотреть видео <img src="img/o-brend/Vector (1).svg" alt=""></a></p>
+    </div>
       </div>
       <div class="o-brend-div2">
        <p class="o-div2-btn"><a href="#" class=" o-div2-text">УСЛОВИЯ СОТРУДНИЧЕСИВА</a></p>
       </div>
     </section>
+
     <footer class="footer main">
     <div class="logo">
             <img src="img/header/logo.png" alt="" class="logo-img">
@@ -188,7 +217,7 @@
     <div class="footer-inputs">
             <p class="imput-text footer-link">Сотрудничества</p>
             <div class="footer-input">
-                <input type="tel" class="input" placeholder="+998">
+                <input type="tel" class="finput" placeholder="+998">
                 <button class="input-btn footer-link">Отправить</button>
             </div>
         </div>
