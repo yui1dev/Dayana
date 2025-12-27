@@ -107,8 +107,17 @@
 
         </div>
         <div class="o-nas-right">
-            <button class="o-nas-vdbtn"><img src="/img/o-nas/Container (1).png" alt="" class="o-nas-img"></button>
+            <button class="o-nas-vdbtn" onclick="openVideo('/img/video.mp4')"><img src="/img/o-nas/Container (1).png" alt="" class="o-nas-img"></button>
         </div>
+
+         <div class="video" id="myVideo">
+            <div class="video-container">
+                <span class="v-exit" onclick="closeVideo()">&times;</span>
+                <video src="/img/video.mp4" controls autoplay muted class="video-img"></video>
+            </div>
+        </div>
+
+        
        </div>
        <div class="o-nas-bottom mw" >
           <div class="o-div"  >
@@ -171,7 +180,7 @@
       <div class="div1">
         <div class="o-brend-text">
         <h1 class="o-brend-title">О бренде</h1>
-        <p class="head-title-btn o-brend-btn"><a href="#" class="head-title-btn-link">Смотреть видео <img src="img/o-brend/Vector (1).svg" alt=""></a></p>
+        <p class="head-title-btn o-brend-btn"><a href="#" class="head-title-btn-link" onclick="openVideo('/img/video.mp4')">Смотреть видео <img src="img/o-brend/Vector (1).svg" alt=""></a></p>
       </div>
       </div>
       <div class="o-brend-div2">
